@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Calendar, Clock, FileText, User, Users, ChevronDown, Home, UserCircle, Calendar as CalendarIcon, Eye, EyeOff, Hospital, Stethoscope, Activity, DollarSign, UserPlus, ShieldCheck } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import {BASE_API} from "../utils/constant";
 
 const Button = ({ children, variant = 'primary', className = '', ...props }) => (
   <button
@@ -111,7 +112,7 @@ export default function AdminDashboard() {
         // Handle not authenticated case
         return;
       }
-      const response = await fetch('http://localhost:5000/api/admin/profile', {
+      const response = await fetch(BASE_API+ 'api/admin/profile', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
