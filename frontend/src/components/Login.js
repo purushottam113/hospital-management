@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Shield, User, Stethoscope, Eye, EyeOff } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import { BASE_URL } from '../utils/Constant';
+import { BASE_API } from '../utils/Constant';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -20,7 +20,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch(BASE_URL +'/api/login', {
+      const response = await fetch(BASE_API +'/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
