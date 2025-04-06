@@ -21,11 +21,11 @@ mongoose.connect('mongodb+srv://shreepadtulse:cR3Y8Hcdvl5ZP0fB@hospital-manageme
 .catch((err) => console.error('Could not connect to MongoDB', err));
 
 // Routes
-app.use('/api/signup', require('./routes/signup'));
-app.use('/api/login', require('./routes/login'));
-app.use('/api/admin', require('./routes/admin'));
-app.use('/api/doctor', require('./routes/doctor'));
-app.use('/api/patient', require('./routes/patient'));
+app.use('/api/signup', require('../../routes/signup'));
+app.use('/api/login', require('../../routes/login'));
+app.use('/api/admin', require('../../routes/admin'));
+app.use('/api/doctor', require('../../routes/doctor'));
+app.use('/api/patient', require('../../routes/patient'));
 
 // Root route
 app.get('/', (req, res) => {
