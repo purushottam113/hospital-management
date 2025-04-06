@@ -1,1 +1,1 @@
-export const BASE_URL = "https://hospital-backend-pro.netlify.app/";
+export const BASE_API = "https://hospital-backend-pro.netlify.app";

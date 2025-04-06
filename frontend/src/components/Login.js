@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Shield, User, Stethoscope, Eye, EyeOff } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import { BASE_URL } from '../utils/constant';
+import { BASE_URL } from '../utils/Constant';
 
 const Login = () => {
   const navigate = useNavigate();
