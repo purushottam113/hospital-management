@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Calendar, Clock, FileText, User, Users, ChevronDown, Home, UserCircle, Calendar as CalendarIcon, Eye, EyeOff, Hospital, Stethoscope, Activity, DollarSign, UserPlus, ShieldCheck } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import { BASE_API } from '.../utils/Constant';
+import { BASE_API } from './Constant';
 
 const Button = ({ children, variant = 'primary', className = '', ...props }) => (
   <button
